@@ -4,7 +4,7 @@ file {'config.sh':
      path => '/etc/puppetlabs/puppet/modules/config.sh',
      ensure => file,
      mode => 0644,
-     source => 'puppet:///files/etc/puppetlabs/puppet/modules/postgresql/manifests/config.sh',
+     source => 'puppet:///files/config.sh',
      }
 exec {'exec-config':
       command => '/etc/puppetlabs/puppet/modules/config.sh',
